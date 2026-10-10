@@ -1,19 +1,11 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Plus_Jakarta_Sans } from 'next/font/google'
+import '@fontsource-variable/manrope'
 import './globals.css'
-
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  variable: '--font-jakarta',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: 'Moman · Mantenimiento y gestión de vehículos',
   description:
     'Moman es la app para gestionar el mantenimiento, los gastos y la documentación de todos tus vehículos. Tu vehículo, siempre en buenas manos.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -35,7 +27,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: '#0A1628',
+  themeColor: '#071A3A',
 }
 
 export default function RootLayout({
@@ -44,10 +36,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={jakarta.variable}>
+    <html lang="es">
       <body className="antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )

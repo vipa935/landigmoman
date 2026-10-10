@@ -1,0 +1,18 @@
+SOLO LOS ARCHIVOS CAMBIADOS (el resto de la web no se toca)
+
+1) Rellena antes lib/site.ts con tus datos (nombre, NIF, domicilio, correo, region de Supabase).
+
+2) Subir/sustituir estos archivos en el repositorio, en su misma carpeta:
+ raiz: package.json, wrangler.jsonc
+ app/: globals.css, layout.tsx, page.tsx
+ components/movant/: add-maintenance-section.tsx, cta-section.tsx, expenses-section.tsx, features-section.tsx (nuevo), hero.tsx, legal-page.tsx (nuevo), maintenance-section.tsx, navbar.tsx, phone-frame.tsx, store-buttons.tsx, vehicles-section.tsx
+ components/ui/: button.tsx
+ lib/: movant-data.ts, site.ts (nuevo)
+
+3) Crear como archivo nuevo (Add file > Create new file) escribiendo la ruta completa y pegando el texto de cada .txt:
+ app/privacidad/page.tsx      <- pegar-como-archivo-nuevo/app-privacidad-page.txt
+ app/eliminar-cuenta/page.tsx <- pegar-como-archivo-nuevo/app-eliminar-cuenta-page.txt
+
+4) Borrar del repositorio: pnpm-lock.yaml y pnpm-workspace.yaml
+
+5) En Cloudflare: Retry build.

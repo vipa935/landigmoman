@@ -110,47 +110,25 @@ export const maintenanceTypes = [
   'Otro',
 ]
 
-export type ExpensePeriod = 'mensual' | 'trimestral' | 'anual'
+export type ExpensePeriod = '2025' | '2026'
 
+// Mismos bloques y colores que la pantalla Gastos de la app (datos de ejemplo)
 export const expenseCategories = [
-  { id: 'mantenimiento', label: 'Mantenimiento', color: 'var(--chart-1)' },
-  { id: 'combustible', label: 'Combustible', color: 'var(--chart-2)' },
-  { id: 'seguros', label: 'Seguros', color: 'var(--chart-3)' },
-  { id: 'itv', label: 'ITV', color: 'var(--chart-4)' },
-  { id: 'documentacion', label: 'Documentación', color: 'var(--chart-5)' },
-  { id: 'otros', label: 'Otros', color: 'var(--chart-6)' },
+  { id: 'mantenimiento', label: 'Mantenimiento', color: '#1f6bff' },
+  { id: 'averias', label: 'Averías', color: '#ef4444' },
+  { id: 'documentos', label: 'Documentos', color: '#f59e0b' },
+  { id: 'repostaje', label: 'Repostaje', color: '#10b981' },
 ] as const
 
 export const expensesByPeriod: Record<ExpensePeriod, Record<string, number>> = {
-  mensual: {
-    mantenimiento: 145,
-    combustible: 210,
-    seguros: 48,
-    itv: 0,
-    documentacion: 12,
-    otros: 25,
-  },
-  trimestral: {
-    mantenimiento: 420,
-    combustible: 630,
-    seguros: 144,
-    itv: 45,
-    documentacion: 30,
-    otros: 68,
-  },
-  anual: {
-    mantenimiento: 1380,
-    combustible: 2460,
-    seguros: 576,
-    itv: 45,
-    documentacion: 110,
-    otros: 240,
-  },
+  '2026': { mantenimiento: 430, averias: 180, documentos: 620, repostaje: 1640 },
+  '2025': { mantenimiento: 520, averias: 0, documentos: 590, repostaje: 1980 },
 }
 
 export const navLinks = [
   { href: '#vehiculos', label: 'Vehículos' },
   { href: '#mantenimiento', label: 'Mantenimiento' },
+  { href: '#funciones', label: 'Funciones' },
   { href: '#anadir', label: 'Añadir' },
   { href: '#gastos', label: 'Gastos' },
 ]

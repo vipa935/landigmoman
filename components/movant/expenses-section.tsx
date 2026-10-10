@@ -7,9 +7,8 @@ import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
 
 const periods: { id: ExpensePeriod; label: string }[] = [
-  { id: 'mensual', label: 'Mensual' },
-  { id: 'trimestral', label: 'Trimestral' },
-  { id: 'anual', label: 'Anual' },
+  { id: '2025', label: '2025' },
+  { id: '2026', label: '2026' },
 ]
 
 const RADIUS = 70
@@ -38,7 +37,7 @@ function DonutChart({ period }: { period: ExpensePeriod }) {
         viewBox="0 0 180 180"
         className="size-full -rotate-90"
         role="img"
-        aria-label={`Gráfica circular de gastos ${period}: ${segments.map((s) => `${s.label} ${formatEuro(values[s.id])}`).join(', ')}`}
+        aria-label={`Gráfica circular de gastos de ${period}: ${segments.map((s) => `${s.label} ${formatEuro(values[s.id])}`).join(', ')}`}
       >
         <circle cx="90" cy="90" r={RADIUS} fill="none" stroke="var(--secondary)" strokeWidth="20" />
         {arcs.map((arc) => (
@@ -57,7 +56,7 @@ function DonutChart({ period }: { period: ExpensePeriod }) {
         ))}
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-        <span className="text-xs font-medium text-slate-500">Total gastos</span>
+        <span className="text-xs font-medium text-slate-500">Total del año</span>
         <span className="text-3xl font-bold tracking-tight text-card-foreground">{formatEuro(total)}</span>
       </div>
     </div>
@@ -65,7 +64,7 @@ function DonutChart({ period }: { period: ExpensePeriod }) {
 }
 
 export function ExpensesSection() {
-  const [period, setPeriod] = useState<ExpensePeriod>('trimestral')
+  const [period, setPeriod] = useState<ExpensePeriod>('2026')
   const values = expensesByPeriod[period]
   const total = Object.values(values).reduce((sum, v) => sum + v, 0)
 
@@ -77,7 +76,7 @@ export function ExpensesSection() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_90%_90%,rgba(0,168,255,0.12),transparent_70%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_90%_90%,rgba(31,107,255,0.12),transparent_70%)]"
       />
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-5 md:px-8 lg:grid-cols-2">
         <div className="flex flex-col gap-8">
@@ -85,7 +84,7 @@ export function ExpensesSection() {
             titleId="gastos-title"
             eyebrow="Finanzas del vehículo"
             title="Control de gastos"
-            description="Descubre cuánto te cuesta realmente cada vehículo. Moman agrupa tus gastos por categoría para que tomes mejores decisiones."
+            description="Descubre cuánto te cuesta realmente cada vehículo. Moman agrupa tus gastos en mantenimiento, averías, documentos y repostajes, y calcula el coste por kilómetro."
           />
           <Reveal delay={100} className="grid grid-cols-2 gap-4 sm:max-w-md">
             <div className="rounded-2xl border border-white/10 bg-background/60 p-5">
@@ -93,17 +92,17 @@ export function ExpensesSection() {
               <p className="mt-1 text-2xl font-bold text-foreground">0,14 €</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-background/60 p-5">
-              <p className="text-xs text-muted-foreground">Ahorro estimado</p>
-              <p className="mt-1 text-2xl font-bold text-primary">320 €/año</p>
+              <p className="text-xs text-muted-foreground">Gasto del año</p>
+              <p className="mt-1 text-2xl font-bold text-primary">2.870 €</p>
             </div>
           </Reveal>
         </div>
 
         <Reveal delay={150}>
-          <article className="rounded-3xl bg-card p-6 text-card-foreground shadow-[0_30px_80px_-30px_rgba(0,168,255,0.45)] md:p-8">
+          <article className="rounded-3xl bg-card p-6 text-card-foreground shadow-[0_30px_80px_-30px_rgba(31,107,255,0.45)] md:p-8">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <h3 className="text-lg font-bold">Resumen de gastos</h3>
-              <div role="tablist" aria-label="Periodo" className="inline-flex rounded-full bg-secondary p-1">
+              <h3 className="text-lg font-bold">Resumen de gastos <span className="ml-1 rounded-full bg-accent px-2 py-0.5 align-middle text-[10px] font-semibold text-accent-foreground">Ejemplo</span></h3>
+              <div role="tablist" aria-label="Año" className="inline-flex rounded-full bg-secondary p-1">
                 {periods.map((p) => (
                   <button
                     key={p.id}
@@ -114,7 +113,7 @@ export function ExpensesSection() {
                     className={cn(
                       'flex-1 rounded-full px-4 py-1.5 text-xs font-semibold transition-all duration-300',
                       period === p.id
-                        ? 'bg-primary text-primary-foreground shadow-[0_6px_16px_-6px_rgba(0,168,255,0.9)]'
+                        ? 'bg-brand-grad text-white shadow-[0_6px_16px_-6px_rgba(31,107,255,0.9)]'
                         : 'text-slate-500 hover:text-card-foreground',
                     )}
                   >

@@ -5,7 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Manrope Variable', Manrope, ui-sans-serif, system-ui, sans-serif;
+  --background-image-brand-grad: linear-gradient(135deg, #1f6bff 0%, #19c2ee 100%);
   --color-surface: var(--surface);
   --color-surface-strong: var(--surface-strong);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -52,41 +53,41 @@
 /* Movant brand theme: navy background, cyan accent, white cards */
 :root {
   color-scheme: dark;
-  --background: #0a1628;
+  --background: #071a3a;
   --foreground: #ffffff;
-  --surface: #0f2038;
-  --surface-strong: #142a48;
+  --surface: #0b2147;
+  --surface-strong: #0e2b5c;
   --card: #ffffff;
-  --card-foreground: #0a1628;
+  --card-foreground: #0c1a33;
   --popover: #ffffff;
-  --popover-foreground: #0a1628;
-  --primary: #00a8ff;
+  --popover-foreground: #0c1a33;
+  --primary: #19c2ee;
   --primary-foreground: #ffffff;
-  --secondary: #f1f5f9;
-  --secondary-foreground: #0a1628;
+  --secondary: #eef3fb;
+  --secondary-foreground: #0c1a33;
   --muted: #e9eef5;
-  --muted-foreground: #a9b6c9;
-  --accent: #e6f6ff;
-  --accent-foreground: #0077b6;
+  --muted-foreground: #a9b8d0;
+  --accent: #e8f0ff;
+  --accent-foreground: #1450c8;
   --destructive: #ef4444;
   --border: rgb(255 255 255 / 0.1);
   --input: #e2e8f0;
-  --ring: #00a8ff;
-  --chart-1: #00a8ff;
-  --chart-2: #1e5eff;
-  --chart-3: #5ad1ff;
-  --chart-4: #0a3d7a;
+  --ring: #19c2ee;
+  --chart-1: #1f6bff;
+  --chart-2: #ef4444;
+  --chart-3: #f59e0b;
+  --chart-4: #10b981;
   --chart-5: #8fa3bf;
   --chart-6: #cbd5e1;
   --radius: 0.875rem;
-  --sidebar: #0f2038;
+  --sidebar: #0b2147;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #00a8ff;
+  --sidebar-primary: #19c2ee;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #142a48;
+  --sidebar-accent: #0e2b5c;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgb(255 255 255 / 0.1);
-  --sidebar-ring: #00a8ff;
+  --sidebar-ring: #19c2ee;
 }
 
 @layer base {

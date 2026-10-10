@@ -10,7 +10,7 @@ const maxExpense = Math.max(...monthlyExpenses.map((m) => m.value))
 const totalExpenses = monthlyExpenses.reduce((sum, m) => sum + m.value, 0)
 
 const cardClass =
-  'h-full rounded-3xl bg-card p-6 text-card-foreground shadow-[0_20px_60px_-30px_rgba(0,168,255,0.35)] transition-transform duration-500 hover:-translate-y-1 md:p-7'
+  'h-full rounded-3xl bg-card p-6 text-card-foreground shadow-[0_20px_60px_-30px_rgba(31,107,255,0.35)] transition-transform duration-500 hover:-translate-y-1 md:p-7'
 
 function VehicleDetailCard() {
   return (
@@ -49,7 +49,7 @@ function VehicleDetailCard() {
         {[
           { label: 'Último servicio', value: '12 sep' },
           { label: 'Seguro hasta', value: 'Jun 2027' },
-          { label: 'Media mensual', value: '1.240 km' },
+          { label: 'Neumáticos', value: '205/55 R16' },
         ].map((stat) => (
           <div key={stat.label} className="rounded-2xl bg-secondary p-3">
             <dt className="text-[11px] text-slate-500">{stat.label}</dt>
@@ -74,7 +74,7 @@ function UpcomingCard() {
             <span
               className={cn(
                 'flex size-11 shrink-0 items-center justify-center rounded-xl',
-                urgent ? 'bg-primary text-primary-foreground' : 'bg-accent text-accent-foreground',
+                urgent ? 'bg-brand-grad text-white' : 'bg-accent text-accent-foreground',
               )}
             >
               <Icon className="size-5" strokeWidth={1.75} aria-hidden="true" />
@@ -152,7 +152,7 @@ export function MaintenanceSection() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_10%_10%,rgba(0,168,255,0.12),transparent_70%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_10%_10%,rgba(31,107,255,0.12),transparent_70%)]"
       />
       <div className="relative mx-auto max-w-6xl px-5 md:px-8">
         <div>

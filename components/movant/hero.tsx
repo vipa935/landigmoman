@@ -1,5 +1,6 @@
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import { vehicleTypes } from '@/lib/movant-data'
+import { APP_URL } from '@/lib/site'
 import { Logo } from './logo'
 
 export function Hero() {
@@ -11,7 +12,7 @@ export function Hero() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(0,168,255,0.22),transparent_70%),radial-gradient(ellipse_50%_40%_at_85%_80%,rgba(30,94,255,0.18),transparent_70%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(31,107,255,0.22),transparent_70%),radial-gradient(ellipse_50%_40%_at_85%_80%,rgba(30,94,255,0.18),transparent_70%)]"
       />
       <div
         aria-hidden="true"
@@ -34,16 +35,16 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground animate-in fade-in slide-in-from-bottom-4 fill-mode-both delay-300 duration-1000 md:text-lg">
-          Mantenimientos, gastos, ITV y documentación de todos tus vehículos, organizados en una sola app.
+          Mantenimientos, repostajes, gastos, ITV y documentación de todos tus vehículos, organizados en una sola app.
           Recibe avisos antes de que sea tarde.
         </p>
 
         <div className="mt-10 flex w-full flex-col items-center justify-center gap-3 animate-in fade-in slide-in-from-bottom-4 fill-mode-both delay-500 duration-1000 sm:w-auto sm:flex-row">
           <a
-            href="#descargar"
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1E90FF] hover:shadow-[0_12px_40px_-8px_rgba(0,168,255,0.8)] sm:w-auto"
+            href={APP_URL}
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-grad px-7 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_-8px_rgba(31,107,255,0.8)] sm:w-auto"
           >
-            Descargar App
+            Abrir la app
             <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
           </a>
           <a

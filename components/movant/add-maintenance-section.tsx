@@ -8,9 +8,9 @@ import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
 
 const highlights = [
-  { icon: Clock, text: 'Registra un mantenimiento en menos de 30 segundos' },
+  { icon: Clock, text: 'Registra un mantenimiento en pocos pasos' },
   { icon: Camera, text: 'Adjunta la foto de la factura o el ticket' },
-  { icon: Sparkles, text: 'Moman calcula automáticamente el próximo aviso' },
+  { icon: Sparkles, text: 'Al marcar un aviso como hecho, Moman programa el siguiente' },
 ]
 
 const inputClass =
@@ -34,7 +34,7 @@ export function AddMaintenanceSection() {
         <Reveal className="order-2 lg:order-1" delay={100}>
           <form
             onSubmit={handleSubmit}
-            className="rounded-3xl bg-card p-6 text-card-foreground shadow-[0_30px_80px_-30px_rgba(0,168,255,0.45)] md:p-8"
+            className="rounded-3xl bg-card p-6 text-card-foreground shadow-[0_30px_80px_-30px_rgba(31,107,255,0.45)] md:p-8"
             aria-label="Formulario de ejemplo para añadir un mantenimiento"
           >
             <div className="flex items-center justify-between">
@@ -55,7 +55,7 @@ export function AddMaintenanceSection() {
                       className={cn(
                         'flex cursor-pointer flex-col items-center gap-1.5 rounded-xl border px-1 py-3 text-center transition-all duration-200 has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-primary/25',
                         active
-                          ? 'border-primary bg-primary text-primary-foreground shadow-[0_8px_20px_-8px_rgba(0,168,255,0.8)]'
+                          ? 'border-primary bg-brand-grad text-white shadow-[0_8px_20px_-8px_rgba(31,107,255,0.8)]'
                           : 'border-input bg-secondary text-slate-600 hover:border-primary/50 hover:text-card-foreground',
                       )}
                     >
@@ -146,7 +146,7 @@ export function AddMaintenanceSection() {
                 'mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary',
                 saved
                   ? 'bg-emerald-500'
-                  : 'bg-primary hover:bg-[#1E90FF] hover:shadow-[0_12px_30px_-10px_rgba(0,168,255,0.9)]',
+                  : 'bg-brand-grad hover:shadow-[0_12px_30px_-10px_rgba(31,107,255,0.9)]',
               )}
             >
               {saved ? (
@@ -169,7 +169,7 @@ export function AddMaintenanceSection() {
             titleId="anadir-title"
             eyebrow="Registro rápido"
             title="Añade mantenimientos fácilmente"
-            description="Un formulario pensado para el día a día: elige el vehículo, el tipo de mantenimiento y listo. Sin papeles, sin olvidos."
+            description="Un formulario pensado para el día a día: elige el vehículo, el tipo de mantenimiento y listo. También puedes hacerle una foto a la factura y dejar que Moman lea los datos."
           />
           <ul className="flex flex-col gap-4">
             {highlights.map(({ icon: Icon, text }, i) => (

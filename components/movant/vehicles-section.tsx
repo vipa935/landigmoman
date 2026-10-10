@@ -6,16 +6,16 @@ import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
 
 const features = [
-  { icon: Layers, title: 'Sin límite de vehículos', text: 'Coches, motos, furgonetas, camiones y autocaravanas.' },
-  { icon: Bell, title: 'Avisos inteligentes', text: 'Te recordamos ITV, seguros y revisiones a tiempo.' },
-  { icon: ShieldCheck, title: 'Historial seguro', text: 'Todo el historial guardado y listo para vender o revisar.' },
+  { icon: Layers, title: 'Todos tus vehículos', text: 'Coches, motos, furgonetas, camiones y autocaravanas, cada uno con su ficha.' },
+  { icon: Bell, title: 'Avisos a tiempo', text: 'Te recordamos ITV, seguro y revisiones por fecha o por kilómetros, también con la app cerrada.' },
+  { icon: ShieldCheck, title: 'Historial completo', text: 'Todo el historial en un solo sitio, y puedes sacarlo en PDF o Excel.' },
 ]
 
 function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
   return (
     <a
       href="#mantenimiento"
-      className="group flex items-center gap-3 rounded-2xl bg-card p-2.5 pr-3 shadow-[0_2px_10px_-4px_rgba(10,22,40,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-12px_rgba(0,168,255,0.5)]"
+      className="group flex items-center gap-3 rounded-2xl bg-card p-2.5 pr-3 shadow-[0_2px_10px_-4px_rgba(10,22,40,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-12px_rgba(31,107,255,0.5)]"
     >
       <div className="relative size-16 shrink-0 overflow-hidden rounded-xl bg-muted">
         <Image src={vehicle.image} alt={vehicle.name} fill sizes="64px" className="object-cover" />
@@ -67,12 +67,12 @@ export function VehiclesSection() {
             <div className="flex flex-col gap-4 px-4 pt-4 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-[11px] font-medium text-slate-500">Hola, Laura</p>
-                  <h3 className="text-xl font-bold text-card-foreground">
-                    Mis vehículos
+                  <h3 className="text-xl font-extrabold tracking-tight text-card-foreground">
+                    Vehículos
                   </h3>
+                  <p className="text-[11px] font-medium text-slate-500">Todos tus vehículos</p>
                 </div>
-                <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-[0_6px_20px_-6px_rgba(0,168,255,0.9)]">
+                <span className="flex size-9 items-center justify-center rounded-full bg-brand-grad text-white shadow-[0_6px_20px_-6px_rgba(31,107,255,0.9)]">
                   <Plus className="size-4" aria-hidden="true" />
                   <span className="sr-only">Añadir vehículo</span>
                 </span>

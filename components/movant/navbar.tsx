@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { navLinks } from '@/lib/movant-data'
+import { APP_URL } from '@/lib/site'
 import { cn } from '@/lib/utils'
 import { Logo } from './logo'
 
@@ -30,10 +31,10 @@ export function Navbar() {
         </ul>
 
         <a
-          href="#descargar"
-          className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1E90FF] hover:shadow-[0_8px_30px_-6px_rgba(0,168,255,0.7)] md:inline-flex"
+          href={APP_URL}
+          className="hidden rounded-full bg-brand-grad px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_-6px_rgba(31,107,255,0.7)] md:inline-flex"
         >
-          Descargar App
+          Abrir la app
         </a>
 
         <button
@@ -69,11 +70,11 @@ export function Navbar() {
           ))}
           <li className="pt-2">
             <a
-              href="#descargar"
+              href={APP_URL}
               onClick={() => setOpen(false)}
-              className="block rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground"
+              className="block rounded-full bg-brand-grad px-5 py-3 text-center text-sm font-semibold text-white"
             >
-              Descargar App
+              Abrir la app
             </a>
           </li>
         </ul>

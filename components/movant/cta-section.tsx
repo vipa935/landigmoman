@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { CONTACT_EMAIL } from '@/lib/site'
 import { Logo, LogoMark } from './logo'
 import { Reveal } from './reveal'
 import { StoreButtons } from './store-buttons'
@@ -8,7 +10,7 @@ export function CtaSection() {
       <Reveal className="relative isolate mx-auto max-w-5xl overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-b from-surface-strong to-background px-6 py-16 text-center md:px-16 md:py-20">
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(0,168,255,0.3),transparent_70%)]"
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(31,107,255,0.3),transparent_70%)]"
         />
         <LogoMark className="absolute -right-10 -bottom-10 -z-10 size-64 opacity-[0.06]" />
 
@@ -21,7 +23,7 @@ export function CtaSection() {
             Lleva el control de tus vehículos al siguiente nivel
           </h2>
           <p className="max-w-lg text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-            Descarga Moman gratis y empieza hoy a cuidar de tus vehículos como se merecen.
+            Prueba Moman y empieza hoy a cuidar de tus vehículos como se merecen.
           </p>
           <StoreButtons className="mt-4 justify-center" />
         </div>
@@ -35,23 +37,23 @@ export function CtaSection() {
         <nav aria-label="Legal">
           <ul className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
             <li>
-              <a href="#" className="transition-colors hover:text-foreground">
+              <Link href="/privacidad" className="transition-colors hover:text-foreground">
                 Privacidad
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="transition-colors hover:text-foreground">
-                Términos
-              </a>
+              <Link href="/eliminar-cuenta" className="transition-colors hover:text-foreground">
+                Eliminar cuenta
+              </Link>
             </li>
             <li>
-              <a href="#" className="transition-colors hover:text-foreground">
+              <a href={`mailto:${CONTACT_EMAIL}`} className="transition-colors hover:text-foreground">
                 Contacto
               </a>
             </li>
           </ul>
         </nav>
-        <p className="text-sm text-muted-foreground">{'© 2026 Moman. Todos los derechos reservados.'}</p>
+        <p className="text-sm text-muted-foreground">{'© 2026 Moman'}</p>
       </footer>
     </section>
   )
