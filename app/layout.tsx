@@ -8,18 +8,9 @@ export const metadata: Metadata = {
     'Moman es la app para gestionar el mantenimiento, los gastos y la documentación de todos tus vehículos. Tu vehículo, siempre en buenas manos.',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon-48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
     ],
     apple: '/apple-icon.png',
   },
