@@ -17,7 +17,9 @@ export default function Privacidad() {
 
       <h2>Responsable</h2>
       <p>
-        {OWNER.name}, con NIF {OWNER.nif} y domicilio en {OWNER.address}. Contacto:{' '}
+        {OWNER.name}
+        {OWNER.nif ? `, con NIF ${OWNER.nif}` : ''}
+        {OWNER.address ? ` y domicilio en ${OWNER.address}` : ''}. Contacto:{' '}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
       </p>
 
@@ -48,7 +50,7 @@ export default function Privacidad() {
 
       <h2>Con quién compartimos los datos</h2>
       <ul>
-        <li><strong>Supabase:</strong> base de datos, autenticación y almacenamiento de archivos. Región del proyecto: {SUPABASE_REGION}.</li>
+        <li><strong>Supabase:</strong> base de datos, autenticación y almacenamiento de archivos. {SUPABASE_REGION ? ` Región del proyecto: ${SUPABASE_REGION}.` : ''}</li>
         <li><strong>Cloudflare:</strong> alojamiento de la web y de la app.</li>
         <li><strong>Anthropic:</strong> lectura de documentos con el escáner (solo cuando lo usas).</li>
         <li><strong>Servicios de notificaciones push</strong> del navegador o del sistema (por ejemplo Google, Mozilla o Apple), solo si activas las notificaciones.</li>
