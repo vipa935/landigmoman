@@ -7,14 +7,15 @@ export const APP_URL = 'https://app.moman.es'
 // TODO: crea este buzón (Cloudflare Email Routing es gratis) o cambia la dirección
 export const CONTACT_EMAIL = 'hola@moman.es'
 
-// TODO: datos del titular (obligatorios en la política de privacidad y el aviso legal en España)
+// Tu nombre (obligatorio). El NIF y el domicilio son opcionales: déjalos en '' mientras no cobres por la app;
+// si los rellenas, aparecen en la política de privacidad (hazlo cuando te des de alta como autónomo).
 export const OWNER = {
-  name: '[TU NOMBRE Y APELLIDOS]',
-  nif: '[TU NIF]',
-  address: '[TU DOMICILIO]',
+  name: 'Víctor Gallego Padilla',
+  nif: '',
+  address: '',
 }
 
 export const LAST_UPDATE = '10 de octubre de 2026'
 
-// TODO: región donde está tu proyecto de Supabase (la ves en Project Settings → General), por ejemplo "la Unión Europea (Fráncfort)"
-export const SUPABASE_REGION = '[REGIÓN DE SUPABASE]'
+// Región de tu proyecto de Supabase (Project Settings → General), por ejemplo 'la Unión Europea (Fráncfort)'. Si la dejas vacía, no se menciona en la política.
+export const SUPABASE_REGION = ''
