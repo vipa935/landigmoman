@@ -5,6 +5,7 @@ import { FeaturesSection } from '@/components/movant/features-section'
 import { Hero } from '@/components/movant/hero'
 import { MaintenanceSection } from '@/components/movant/maintenance-section'
 import { Navbar } from '@/components/movant/navbar'
+import { PlansSection } from '@/components/movant/plans-section'
 import { VehiclesSection } from '@/components/movant/vehicles-section'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <FeaturesSection />
         <AddMaintenanceSection />
         <ExpensesSection />
+        <PlansSection />
         <CtaSection />
       </main>
     </>
