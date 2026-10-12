@@ -131,4 +131,5 @@ export const navLinks = [
   { href: '#funciones', label: 'Funciones' },
   { href: '#anadir', label: 'Añadir' },
   { href: '#gastos', label: 'Gastos' },
+  { href: '#planes', label: 'Planes' },
 ]
