@@ -12,10 +12,10 @@ export function CtaSection() {
           aria-hidden="true"
           className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(31,107,255,0.3),transparent_70%)]"
         />
-        <LogoMark className="absolute -right-10 -bottom-10 -z-10 size-64 opacity-[0.06]" />
+        <LogoMark className="absolute -right-10 -bottom-10 -z-10 h-56 w-auto opacity-[0.06]" />
 
         <div className="flex flex-col items-center gap-6">
-          <LogoMark className="size-14" />
+          <LogoMark className="h-14 w-auto" />
           <h2
             id="cta-title"
             className="max-w-2xl text-balance text-3xl font-bold leading-tight tracking-tight text-foreground md:text-5xl"
