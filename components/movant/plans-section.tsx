@@ -29,7 +29,7 @@ const plans: Plan[] = [
       '1 vehículo',
       'Mantenimientos, repostajes, gastos y documentos',
       'Avisos y notificaciones con la app cerrada',
-      'Escáner de documentos: 3 lecturas al mes y 3 de regalo',
+      'Escáner de documentos: 3 lecturas al mes y 3 extra',
       'Exportar tus datos a Excel',
     ],
   },
