@@ -41,7 +41,7 @@ const plans: Plan[] = [
     price: '2,99 €/mes',
     priceNote: 'o 19,99 € al año',
     intro: 'Para quien tiene más de un vehículo.',
-    items: ['Todo lo de Free', 'Hasta 5 vehículos', 'Más lecturas del escáner de documentos'],
+    items: ['Todo lo de Free', 'Hasta 5 vehículos', 'Más lecturas del escáner de documentos', 'Transferir un vehículo a otra persona con un código QR'],
   },
   {
     id: 'flotas',
