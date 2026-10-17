@@ -55,6 +55,7 @@ export default function Privacidad() {
       <ul>
         <li><strong>Supabase:</strong> base de datos, autenticación y almacenamiento de archivos. {SUPABASE_REGION ? ` Región del proyecto: ${SUPABASE_REGION}.` : ''}</li>
         <li><strong>Cloudflare:</strong> alojamiento de la web y de la app.</li>
+        <li><strong>Resend:</strong> envío de los correos de tu cuenta (confirmación y cambio de contraseña), para lo que necesita tu dirección de correo.</li>
         <li><strong>Anthropic:</strong> lectura de documentos con el escáner (solo cuando lo usas).</li>
         <li><strong>Servicios de notificaciones push</strong> del navegador o del sistema (por ejemplo Google, Mozilla o Apple), solo si activas las notificaciones.</li>
         <li><strong>Wikimedia:</strong> imágenes orientativas.</li>
@@ -65,7 +66,8 @@ export default function Privacidad() {
       <p>
         Tratamos tus datos para prestarte el servicio que has solicitado al crear tu cuenta: guardar tu información,
         enviarte los avisos y generar tus informes. Las notificaciones y el escáner solo funcionan si tú los activas o
-        los usas.
+        los usas. Los avisos y las comunicaciones comerciales sobre Premium y Flotas se basan en tu consentimiento, que
+        puedes retirar en cualquier momento.
       </p>
 
       <h2>Cookies y almacenamiento</h2>
@@ -76,6 +78,13 @@ export default function Privacidad() {
 
       <h2>Cuánto tiempo los conservamos</h2>
       <p>Mientras mantengas tu cuenta. Si la eliminas, borramos tus datos (consulta cómo en la página «Eliminar cuenta»).</p>
+
+      <h2>Si Moman deja de funcionar</h2>
+      <p>
+        Si algún día tuviéramos que cerrar el servicio, te avisaremos con antelación (al menos 30 días) por correo y
+        dentro de la app. Durante ese plazo podrás exportar tus datos a Excel y sacar tus informes en PDF. Pasado el
+        plazo, borraremos los datos de las cuentas.
+      </p>
 
       <h2>Tus derechos</h2>
       <p>
