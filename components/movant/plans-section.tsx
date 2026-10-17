@@ -1,6 +1,7 @@
 import { Check } from 'lucide-react'
 import { APP_URL } from '@/lib/site'
 import { cn } from '@/lib/utils'
+import { PlanInterest } from './plan-interest'
 import { Reveal } from './reveal'
 import { SectionHeading } from './section-heading'
 
@@ -63,7 +64,7 @@ export function PlansSection() {
           titleId="planes-title"
           eyebrow="Planes"
           title="Empieza gratis. Crece cuando lo necesites."
-          description="Hoy puedes usar Moman gratis. Los planes de pago llegarán más adelante."
+          description="Hoy puedes usar Moman gratis. Los planes de pago llegarán más adelante: si alguno te interesa, pulsa «Me interesa» y te avisamos."
         />
         <ul className="mt-14 grid gap-5 lg:grid-cols-3">
           {plans.map((plan, i) => (
@@ -100,13 +101,15 @@ export function PlansSection() {
                   </li>
                 ))}
               </ul>
-              {plan.available && (
+              {plan.available ? (
                 <a
                   href={APP_URL}
                   className="inline-flex items-center justify-center rounded-full bg-brand-grad px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
                 >
                   Abrir Moman
                 </a>
+              ) : (
+                <PlanInterest plan={plan.id as 'pro' | 'flotas'} planName={plan.name} />
               )}
             </Reveal>
           ))}
