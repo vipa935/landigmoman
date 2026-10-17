@@ -85,7 +85,7 @@ export function PlanInterest({ plan, planName }: Props) {
       <label className="flex items-start gap-2.5 text-xs leading-relaxed text-muted-foreground">
         <input type="checkbox" checked={consent} onChange={e => setConsent(e.target.checked)} className="mt-0.5 size-4 shrink-0 accent-[#19c2ee]" />
         <span>
-          Acepto que me avisen por correo cuando el plan {planName} esté disponible. Puedo pedir que borren mi correo escribiendo a hola@moman.es.
+          Acepto que me avisen por correo cuando el plan {planName} esté disponible y que me envíen comunicaciones comerciales sobre él (novedades y ofertas), como máximo 3 correos al mes. Puedo darme de baja cuando quiera con el enlace de cada correo o escribiendo a hola@moman.es.
           Más información en la <a href="/privacidad" className="underline underline-offset-2 hover:text-foreground">política de privacidad</a>.
         </span>
       </label>
