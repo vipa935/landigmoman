@@ -15,7 +15,7 @@ export const OWNER = {
   address: '',
 }
 
-export const LAST_UPDATE = '17 de octubre de 2026'
+export const LAST_UPDATE = '18 de octubre de 2026'
 
 // Proyecto de Supabase al que la web envía el «Me interesa» (solo puede llamar a una función que añade el correo).
 // La clave «anon» es pública por diseño (es la misma que lleva la app dentro): no da acceso a ningún dato.
