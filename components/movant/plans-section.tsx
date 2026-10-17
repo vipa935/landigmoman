@@ -16,7 +16,7 @@ type Plan = {
   items: string[]
 }
 
-// Solo el plan Free está disponible hoy. Pro y Flotas se muestran como próximos, sin botón de compra.
+// Solo el plan Free está disponible hoy. Premium y Flotas se muestran como próximos, sin botón de compra.
 const plans: Plan[] = [
   {
     id: 'free',
@@ -35,8 +35,8 @@ const plans: Plan[] = [
     ],
   },
   {
-    id: 'pro',
-    name: 'Pro',
+    id: 'pro', // identificador interno (coincide con la base de datos); lo que se ve en pantalla es «Premium»
+    name: 'Premium',
     badge: 'Muy pronto',
     available: false,
     price: '2,99 €/mes',
@@ -52,7 +52,7 @@ const plans: Plan[] = [
     price: '9,99 €/mes',
     priceNote: 'Para autónomos y pequeñas empresas',
     intro: 'Pensado para vehículos de trabajo.',
-    items: ['Todo lo de Pro', 'Desglose de IVA', 'Gestión de conductores'],
+    items: ['Todo lo de Premium', 'Desglose de IVA', 'Gestión de conductores'],
   },
 ]
 
