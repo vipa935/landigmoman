@@ -15,7 +15,12 @@ export const OWNER = {
   address: '',
 }
 
-export const LAST_UPDATE = '10 de octubre de 2026'
+export const LAST_UPDATE = '17 de octubre de 2026'
+
+// Proyecto de Supabase al que la web envía el «Me interesa» (solo puede llamar a una función que añade el correo).
+// La clave «anon» es pública por diseño (es la misma que lleva la app dentro): no da acceso a ningún dato.
+export const SUPABASE_URL = 'https://hkvzoqgwdibimpuozwts.supabase.co'
+export const SUPABASE_ANON_KEY = 'sb_publishable__zDTpNADM-Ovv8td2qWFnw_e6iZJ0z2'
 
 // Región de tu proyecto de Supabase (Project Settings → General), por ejemplo 'la Unión Europea (Fráncfort)'. Si la dejas vacía, no se menciona en la política.
 export const SUPABASE_REGION = ''
