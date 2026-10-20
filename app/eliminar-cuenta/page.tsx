@@ -4,7 +4,7 @@ import { CONTACT_EMAIL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Eliminar cuenta · Moman',
-  description: 'Cómo eliminar tu cuenta de Moman y todos tus datos, desde la app o por correo.',
+  description: 'Cómo eliminar tu cuenta de Moman y todos tus datos, o solo algunos de ellos, desde la app o por correo.',
 }
 
 export default function EliminarCuenta() {
@@ -23,7 +23,15 @@ export default function EliminarCuenta() {
         «Eliminar cuenta Moman».
       </p>
 
-      <h2>Qué se borra</h2>
+      <h2>Borrar solo algunos datos</h2>
+      <p>
+        No hace falta eliminar la cuenta para borrar datos. Desde la app puedes eliminar por separado cada vehículo,
+        mantenimiento, repostaje, aviso y documento adjunto, y se borran en el momento. Si prefieres que lo hagamos nosotros,
+        escribe a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> desde el correo con el que te registraste,
+        indicando qué datos quieres borrar, y lo atenderemos como máximo en un mes.
+      </p>
+
+      <h2>Qué se borra al eliminar la cuenta</h2>
       <ul>
         <li>Tu cuenta y tu acceso.</li>
         <li>Tus vehículos, mantenimientos, repostajes, gastos y avisos.</li>
