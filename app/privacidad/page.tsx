@@ -25,7 +25,7 @@ export default function Privacidad() {
 
       <h2>Qué datos tratamos</h2>
       <ul>
-        <li><strong>Cuenta:</strong> tu correo electrónico y tu contraseña (la contraseña la gestiona el servicio de autenticación y no la vemos en claro).</li>
+        <li><strong>Cuenta:</strong> tu correo electrónico y tu contraseña (la contraseña la gestiona el servicio de autenticación y no la vemos en claro). Si eliges entrar con Google, recibimos tu correo y los datos básicos de tu cuenta de Google (nombre y foto de perfil), que no usamos para nada más; en ese caso no hay contraseña de Moman.</li>
         <li><strong>Lo que introduces en la app:</strong> tus vehículos (nombre, marca, modelo, matrícula, bastidor, kilómetros, neumáticos, seguro, etc.), mantenimientos, repostajes, gastos, avisos y los documentos o fotos que adjuntes.</li>
         <li><strong>Ajustes de notificaciones:</strong> la hora elegida, tu zona horaria y la suscripción de notificaciones de tu navegador o dispositivo.</li>
         <li><strong>Uso del escáner:</strong> un contador de lecturas por día (el límite es de 20 al día por usuario).</li>
@@ -56,6 +56,7 @@ export default function Privacidad() {
         <li><strong>Supabase:</strong> base de datos, autenticación y almacenamiento de archivos. {SUPABASE_REGION ? ` Región del proyecto: ${SUPABASE_REGION}.` : ''}</li>
         <li><strong>Cloudflare:</strong> alojamiento de la web y de la app.</li>
         <li><strong>Resend:</strong> envío de los correos de tu cuenta (confirmación y cambio de contraseña), para lo que necesita tu dirección de correo.</li>
+        <li><strong>Google:</strong> inicio de sesión con tu cuenta de Google (solo si eliges esa opción).</li>
         <li><strong>Anthropic:</strong> lectura de documentos con el escáner (solo cuando lo usas).</li>
         <li><strong>Servicios de notificaciones push</strong> del navegador o del sistema (por ejemplo Google, Mozilla o Apple), solo si activas las notificaciones.</li>
         <li><strong>Wikimedia:</strong> imágenes orientativas.</li>
