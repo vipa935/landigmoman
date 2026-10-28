@@ -25,7 +25,7 @@ export default function Privacidad() {
 
       <h2>Qué datos tratamos</h2>
       <ul>
-        <li><strong>Cuenta:</strong> tu correo electrónico y tu contraseña (la contraseña la gestiona el servicio de autenticación y no la vemos en claro). Si eliges entrar con Google, recibimos tu correo y los datos básicos de tu cuenta de Google (nombre y foto de perfil), que no usamos para nada más; en ese caso no hay contraseña de Moman.</li>
+        <li><strong>Cuenta:</strong> tu correo electrónico y tu contraseña (la contraseña la gestiona el servicio de autenticación y no la vemos en claro). Si eliges entrar con Google, recibimos tu correo y los datos básicos de tu cuenta de Google (nombre y foto de perfil). Usamos tu nombre solo para saludarte en la pantalla de inicio de la app; la foto y el resto de datos no los usamos para nada más; en ese caso no hay contraseña de Moman.</li>
         <li><strong>Lo que introduces en la app:</strong> tus vehículos (nombre, marca, modelo, matrícula, bastidor, kilómetros, neumáticos, seguro, etc.), mantenimientos, repostajes, gastos, avisos y los documentos o fotos que adjuntes.</li>
         <li><strong>Ajustes de notificaciones:</strong> la hora elegida, tu zona horaria y la suscripción de notificaciones de tu navegador o dispositivo.</li>
         <li><strong>Uso del escáner:</strong> un contador de lecturas por día (el límite es de 20 al día por usuario).</li>
