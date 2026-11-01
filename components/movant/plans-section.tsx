@@ -30,7 +30,7 @@ const plans: Plan[] = [
       '1 vehículo',
       'Mantenimientos, repostajes, gastos y documentos',
       'Avisos y notificaciones con la app cerrada',
-      'Escáner de documentos: 3 lecturas al mes y 3 extra',
+      'Escáner de documentos: 3 lecturas al mes',
       'Exportar tus datos a Excel',
     ],
   },
@@ -42,7 +42,7 @@ const plans: Plan[] = [
     price: '2,99 €/mes',
     priceNote: 'o 19,99 € al año',
     intro: 'Para quien tiene más de un vehículo.',
-    items: ['Todo lo de Free', 'Hasta 5 vehículos', 'Más lecturas del escáner de documentos', 'Transferir un vehículo a otra persona con un código QR'],
+    items: ['Todo lo de Free', 'Hasta 5 vehículos', 'Escáner de documentos: hasta 20 lecturas al día', 'Transferir un vehículo a otra persona con un código QR'],
   },
   {
     id: 'flotas',
