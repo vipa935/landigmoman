@@ -55,7 +55,7 @@ export default function Privacidad() {
       <ul>
         <li><strong>Supabase:</strong> base de datos, autenticación y almacenamiento de archivos. {SUPABASE_REGION ? ` Región del proyecto: ${SUPABASE_REGION}.` : ''}</li>
         <li><strong>Cloudflare:</strong> alojamiento de la web y de la app.</li>
-        <li><strong>Resend:</strong> envío de los correos de tu cuenta (confirmación y cambio de contraseña), para lo que necesita tu dirección de correo.</li>
+        <li><strong>Resend:</strong> envío de los correos de tu cuenta (el de confirmación, que incluye una breve bienvenida con lo que ofrece el plan Free y el aviso de que Premium llegará pronto, y el de cambio de contraseña), para lo que necesita tu dirección de correo.</li>
         <li><strong>Google:</strong> inicio de sesión con tu cuenta de Google (solo si eliges esa opción).</li>
         <li><strong>Anthropic:</strong> lectura de documentos con el escáner (solo cuando lo usas).</li>
         <li><strong>Servicios de notificaciones push</strong> del navegador o del sistema (por ejemplo Google, Mozilla o Apple), solo si activas las notificaciones.</li>
