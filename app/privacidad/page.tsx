@@ -26,13 +26,22 @@ export default function Privacidad() {
       <h2>Qué datos tratamos</h2>
       <ul>
         <li><strong>Cuenta:</strong> tu correo electrónico y tu contraseña (la contraseña la gestiona el servicio de autenticación y no la vemos en claro). Si eliges entrar con Google, recibimos tu correo y los datos básicos de tu cuenta de Google (nombre y foto de perfil). Usamos tu nombre solo para saludarte en la pantalla de inicio de la app; la foto y el resto de datos no los usamos para nada más; en ese caso no hay contraseña de Moman.</li>
-        <li><strong>Lo que introduces en la app:</strong> tus vehículos (nombre, marca, modelo, matrícula, bastidor, kilómetros, neumáticos, seguro, el orden en que los colocas, etc.), mantenimientos, repostajes, gastos, avisos y los documentos o fotos que adjuntes.</li>
+        <li><strong>Lo que introduces en la app:</strong> tus vehículos (nombre, marca, modelo, matrícula, bastidor, kilómetros, neumáticos, seguro, los datos de compra, el orden en que los colocas, etc.), mantenimientos, repostajes, gastos, avisos y los documentos o fotos que adjuntes.</li>
         <li><strong>Ajustes de notificaciones:</strong> la hora elegida, tu zona horaria y la suscripción de notificaciones de tu navegador o dispositivo.</li>
+        <li><strong>Sugerencias y comentarios:</strong> si usas el apartado de Ajustes para escribirnos, guardamos tu mensaje, el tipo que elijas (sugerencia, fallo u otro), la versión de la app y la fecha, junto con tu cuenta, para poder leerlo y mejorar la app. Solo lo ve la persona que administra Moman. Si borras tu cuenta, se borran tus mensajes.</li>
         <li><strong>Uso del escáner:</strong> un contador de lecturas por día para aplicar el límite de tu plan: 3 lecturas al mes en el plan Free y hasta 100 al mes en Premium.</li>
         <li><strong>Transferencia de vehículos (Premium):</strong> si transfieres un vehículo, guardamos el código de la transferencia, su caducidad (30 minutos), su estado y la fecha. La persona que lo acepta recibe una copia de los datos que tú elijas (ficha del vehículo, mantenimientos, repostajes y fecha de la ITV) y no recibe tu identidad, el seguro, las facturas o fotos adjuntas, tus notas ni el resto de tus avisos. Tú conservas tu copia.</li>
         <li><strong>Plan y avisos de Premium y Flotas:</strong> tu plan (gratuito o de pago) y, cuando intentas añadir más vehículos de los que permite tu plan, un registro de cuántas veces has visto la pantalla «Moman Premium, muy pronto» (plan Free) o «Plan Flotas, más adelante» (plan Premium) y cuántos vehículos tienes, para medir el interés. Si además pulsas «Avísame» o «Me interesa», guardamos tu correo electrónico, con tu consentimiento, para avisarte del lanzamiento de Moman Premium o del plan Flotas (según la pantalla en la que lo pidas) y enviarte comunicaciones comerciales sobre él (novedades y ofertas), como máximo 3 al mes. Puedes cancelar cada aviso en la app, en Ajustes → Privacidad y cuenta, y tu correo se borra.</li>
         <li><strong>«Me interesa» de la web:</strong> si en moman.es pulsas «Me interesa» bajo un plan de pago, guardamos el correo electrónico que escribas y el plan que te interesa, con tu consentimiento (la casilla que marcas), para avisarte cuando ese plan esté disponible y enviarte comunicaciones comerciales sobre él (novedades y ofertas), como máximo 3 al mes. No lo usamos para nada más. Puedes darte de baja en cualquier momento con el enlace de cada correo o escribiendo a {CONTACT_EMAIL}, y borraremos tu correo.</li>
       </ul>
+
+      <h2>Límite de almacenamiento de adjuntos</h2>
+      <p>
+        Cada plan incluye un espacio para los documentos que adjuntas y las fotos de tus vehículos: 25 MB en el plan Free
+        y 500 MB en Premium. Para aplicar el límite, Moman calcula cuánto espacio ocupan tus archivos. Si llegas al
+        límite no se borra nada: tus archivos se conservan y puedes verlos y descargarlos, pero no podrás subir
+        nuevos hasta que borres adjuntos que ya no necesites (o, cuando esté disponible, pases a Premium).
+      </p>
 
       <h2>Escáner de documentos con inteligencia artificial</h2>
       <p>
