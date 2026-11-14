@@ -5,6 +5,7 @@ import { CONTACT_EMAIL, OWNER, TERMS_UPDATE } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Condiciones de uso · Moman',
   description: 'Reglas de uso de Moman: qué puedes hacer, qué no, planes y límites, y cuándo podemos suspender una cuenta.',
+  alternates: { canonical: '/condiciones' },
 }
 
 export default function Condiciones() {
