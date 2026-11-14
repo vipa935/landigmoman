@@ -17,6 +17,9 @@ export const OWNER = {
 
 export const LAST_UPDATE = '9 de noviembre de 2026'
 
+// Fecha de las condiciones de uso (se cambia aparte de la de la política de privacidad)
+export const TERMS_UPDATE = '13 de noviembre de 2026'
+
 // Proyecto de Supabase al que la web envía el «Me interesa» (solo puede llamar a una función que añade el correo).
 // La clave «anon» es pública por diseño (es la misma que lleva la app dentro): no da acceso a ningún dato.
 export const SUPABASE_URL = 'https://hkvzoqgwdibimpuozwts.supabase.co'
