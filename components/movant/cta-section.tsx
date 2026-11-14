@@ -42,6 +42,11 @@ export function CtaSection() {
               </Link>
             </li>
             <li>
+              <Link href="/condiciones" className="transition-colors hover:text-foreground">
+                Condiciones de uso
+              </Link>
+            </li>
+            <li>
               <Link href="/eliminar-cuenta" className="transition-colors hover:text-foreground">
                 Eliminar cuenta
               </Link>
