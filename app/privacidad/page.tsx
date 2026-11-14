@@ -5,6 +5,7 @@ import { CONTACT_EMAIL, OWNER, SUPABASE_REGION } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Política de privacidad · Moman',
   description: 'Qué datos trata Moman, para qué, con quién se comparten y cómo ejercer tus derechos.',
+  alternates: { canonical: '/privacidad' },
 }
 
 export default function Privacidad() {
