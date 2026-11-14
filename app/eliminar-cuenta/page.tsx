@@ -5,6 +5,7 @@ import { CONTACT_EMAIL } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Eliminar cuenta · Moman',
   description: 'Cómo eliminar tu cuenta de Moman y todos tus datos, o solo algunos de ellos, desde la app o por correo.',
+  alternates: { canonical: '/eliminar-cuenta' },
 }
 
 export default function EliminarCuenta() {
