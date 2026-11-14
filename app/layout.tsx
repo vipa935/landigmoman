@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from 'next'
 import '@fontsource-variable/manrope'
 import './globals.css'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: 'Moman · Mantenimiento y gestión de vehículos',
   description:
     'Moman es la app para gestionar el mantenimiento, los gastos y la documentación de todos tus vehículos. Tu vehículo, siempre en buenas manos.',

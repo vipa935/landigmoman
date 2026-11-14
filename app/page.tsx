@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { AddMaintenanceSection } from '@/components/movant/add-maintenance-section'
 import { CtaSection } from '@/components/movant/cta-section'
 import { ExpensesSection } from '@/components/movant/expenses-section'
@@ -7,6 +8,10 @@ import { MaintenanceSection } from '@/components/movant/maintenance-section'
 import { Navbar } from '@/components/movant/navbar'
 import { PlansSection } from '@/components/movant/plans-section'
 import { VehiclesSection } from '@/components/movant/vehicles-section'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 export default function Home() {
   return (
