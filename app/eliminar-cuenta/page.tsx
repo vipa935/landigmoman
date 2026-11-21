@@ -37,6 +37,7 @@ export default function EliminarCuenta() {
         <li>Tu cuenta y tu acceso.</li>
         <li>Tus vehículos, mantenimientos, repostajes, gastos y avisos.</li>
         <li>Los documentos y fotos que hayas adjuntado.</li>
+        <li>El acceso de las personas con las que hayas compartido tus vehículos y tu acceso a los vehículos que te hayan compartido (lo que hayas anotado en un vehículo ajeno se queda en el de su propietario).</li>
         <li>Tus ajustes y las suscripciones de notificaciones.</li>
       </ul>
 
