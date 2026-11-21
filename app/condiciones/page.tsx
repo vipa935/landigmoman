@@ -45,17 +45,26 @@ export default function Condiciones() {
         límites de cada plan pueden cambiar, pero si los reducimos no borraremos nada de lo que ya tengas guardado.
       </p>
 
-      <h2>Uso aceptable</h2>
-      <p>Para que Moman funcione bien para todos, no está permitido:</p>
+      <h2>Compartir un vehículo</h2>
+      <p>
+        Con Premium podrás invitar a otra persona a un vehículo tuyo, como colaboradora (puede ver y anotar) o solo para
+        ver. Tú decides con quién y con qué permiso, y eres responsable de a quién invitas: la persona invitada verá todos
+        los datos y documentos de ese vehículo, también los de compra. Solo debes compartir vehículos de los que seas
+        propietario o tengas derecho a compartir. Puedes quitar el acceso cuando quieras y la persona invitada puede
+        salir cuando quiera. Si dejas de tener Premium, las personas invitadas dejan de ver el vehículo; no se borra nada
+        y vuelven a verlo si lo recuperas. Quien recibe una invitación no se convierte en propietario del vehículo.
+      </p>
+
+      <h2>Normas de uso</h2>
+      <p>Usa Moman de forma lícita y sin perjudicar a otras personas ni al servicio. En particular, no puedes:</p>
       <ul>
-        <li>Usar la app con fines ilegales o para perjudicar a otras personas.</li>
-        <li>Intentar acceder a datos de otras cuentas, o saltarse o burlar la seguridad, los límites de un plan o el sistema anti-robots.</li>
-        <li>Usar programas automáticos (bots, rastreadores) o hacer un uso que sobrecargue el servicio.</li>
-        <li>Usar el escáner para fines distintos de leer documentos de tus vehículos, o abusar de él.</li>
-        <li>Subir archivos o textos ilegales, que vulneren derechos de terceros, que contengan virus o que sean ofensivos.</li>
-        <li>Suplantar a otra persona o dar datos falsos para registrarte.</li>
-        <li>Usar el apartado de sugerencias y comentarios para insultar, acosar o enviar publicidad no solicitada.</li>
-        <li>Copiar, revender o explotar Moman sin nuestro permiso.</li>
+        <li>Intentar acceder a cuentas, datos o sistemas de otras personas, ni eludir las medidas de seguridad o los límites de tu plan.</li>
+        <li>Interferir con el funcionamiento o la seguridad de Moman, por ejemplo, mediante automatización no autorizada o un número excesivo de solicitudes.</li>
+        <li>Usar el escáner para fines distintos de leer documentación de tus vehículos o para eludir los límites de tu plan.</li>
+        <li>Subir contenido ilegal, que infrinja derechos de terceros, contenga virus o se utilice para acosar, amenazar o suplantar a alguien.</li>
+        <li>Hacerte pasar por otra persona o proporcionar datos engañosos para crear una cuenta.</li>
+        <li>Usar las sugerencias o comentarios para acosar o enviar publicidad no solicitada.</li>
+        <li>Copiar, redistribuir o revender Moman o partes de la app sin autorización. Esto no limita tus derechos sobre tus propios datos.</li>
       </ul>
 
       <h2>Suspensión y cancelación de cuentas</h2>
