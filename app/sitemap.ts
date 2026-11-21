@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${SITE_URL}/`, lastModified: '2026-11-13', changeFrequency: 'monthly', priority: 1 },
     { url: `${SITE_URL}/privacidad`, lastModified: '2026-11-09', changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${SITE_URL}/condiciones`, lastModified: '2026-11-14', changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${SITE_URL}/condiciones`, lastModified: '2026-11-13', changeFrequency: 'yearly', priority: 0.3 },
     { url: `${SITE_URL}/eliminar-cuenta`, lastModified: '2026-11-09', changeFrequency: 'yearly', priority: 0.3 },
   ]
 }
