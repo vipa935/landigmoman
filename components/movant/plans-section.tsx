@@ -41,8 +41,8 @@ const plans: Plan[] = [
     available: false,
     price: '2,99 €/mes',
     priceNote: 'o 19,99 € al año',
-    intro: 'Para quien tiene más de un vehículo.',
-    items: ['Todo lo de Free', 'Hasta 5 vehículos', 'Escáner de documentos: hasta 100 lecturas al mes', 'Transferir un vehículo a otra persona con un código QR', 'Ordena tus vehículos a tu gusto'],
+    intro: 'Para quien tiene más de un vehículo o quiere compartirlo.',
+    items: ['Todo lo de Free', 'Hasta 5 vehículos', 'Escáner de documentos: hasta 100 lecturas al mes', 'Transferir un vehículo a otra persona con un código QR', 'Comparte un vehículo con otra persona (tu pareja, tu familia o tu taller)', 'Ordena tus vehículos a tu gusto'],
   },
   {
     id: 'flotas',
