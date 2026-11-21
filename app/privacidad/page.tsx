@@ -32,9 +32,23 @@ export default function Privacidad() {
         <li><strong>Sugerencias y comentarios:</strong> si usas el apartado de Ajustes para escribirnos, guardamos tu mensaje, el tipo que elijas (sugerencia, fallo u otro), la versión de la app y la fecha, junto con tu cuenta, para poder leerlo y mejorar la app. Solo lo ve la persona que administra Moman. Si borras tu cuenta, se borran tus mensajes.</li>
         <li><strong>Uso del escáner:</strong> un contador de lecturas por día para aplicar el límite de tu plan: 3 lecturas al mes en el plan Free y hasta 100 al mes en Premium.</li>
         <li><strong>Transferencia de vehículos (Premium):</strong> si transfieres un vehículo, guardamos el código de la transferencia, su caducidad (30 minutos), su estado y la fecha. La persona que lo acepta recibe una copia de los datos que tú elijas (ficha del vehículo, mantenimientos, repostajes y fecha de la ITV) y no recibe tu identidad, el seguro, las facturas o fotos adjuntas, tus notas ni el resto de tus avisos. Tú conservas tu copia.</li>
+        <li><strong>Compartir un vehículo (Premium):</strong> si invitas a otra persona a uno de tus vehículos, guardamos la invitación (su código, el permiso que elijas —colaborador o solo lectura—, su caducidad de 7 días y si ya se ha usado) y la relación entre ese vehículo y la persona que la acepta, con su permiso y la fecha. La persona invitada ve el vehículo entero (la ficha, los datos de compra, los mantenimientos, los repostajes, los avisos y los documentos adjuntos) y, si es colaboradora, también puede añadir, editar y borrar mantenimientos, repostajes, avisos y documentos y actualizar el kilometraje. Tú ves su nombre y ella el tuyo; si la cuenta no tiene nombre, se muestra la parte del correo anterior a la @. El correo completo no se muestra.</li>
         <li><strong>Plan y avisos de Premium y Flotas:</strong> tu plan (gratuito o de pago) y, cuando intentas añadir más vehículos de los que permite tu plan, un registro de cuántas veces has visto la pantalla «Moman Premium, muy pronto» (plan Free) o «Plan Flotas, más adelante» (plan Premium) y cuántos vehículos tienes, para medir el interés. Si además pulsas «Avísame» o «Me interesa», guardamos tu correo electrónico, con tu consentimiento, para avisarte del lanzamiento de Moman Premium o del plan Flotas (según la pantalla en la que lo pidas) y enviarte comunicaciones comerciales sobre él (novedades y ofertas), como máximo 3 al mes. Puedes cancelar cada aviso en la app, en Ajustes → Privacidad y cuenta, y tu correo se borra.</li>
         <li><strong>«Me interesa» de la web:</strong> si en moman.es pulsas «Me interesa» bajo un plan de pago, guardamos el correo electrónico que escribas y el plan que te interesa, con tu consentimiento (la casilla que marcas), para avisarte cuando ese plan esté disponible y enviarte comunicaciones comerciales sobre él (novedades y ofertas), como máximo 3 al mes. No lo usamos para nada más. Puedes darte de baja en cualquier momento con el enlace de cada correo o escribiendo a {CONTACT_EMAIL}, y borraremos tu correo.</li>
       </ul>
+
+      <h2>Compartir un vehículo con otra persona</h2>
+      <p>
+        Compartir un vehículo es una decisión tuya, como propietario: tú eliges con quién y con qué permiso. Moman no
+        comprueba quién es la persona invitada, así que invita solo a quien quieras que vea todo el historial de ese
+        vehículo, también los datos de compra y los documentos adjuntos. El vehículo sigue siendo tuyo: la ficha, los
+        datos de compra, la transferencia y el borrado son solo del propietario, y lo que anote un colaborador se guarda
+        en tu cuenta y cuenta en tu espacio de almacenamiento. Puedes quitar el acceso en cualquier momento, y la persona
+        invitada puede salir cuando quiera; lo que haya anotado se queda en el historial del vehículo. Si dejas de tener
+        Premium, las personas invitadas dejan de ver el vehículo (no se borra nada y vuelven a verlo si lo recuperas).
+        Si eliminas tu cuenta, desaparece el vehículo también para ellas. Una persona invitada solo ve ese vehículo, no
+        el resto de tu cuenta, y la copia de seguridad en Excel de cada persona incluye solo sus propios vehículos.
+      </p>
 
       <h2>Límite de almacenamiento de adjuntos</h2>
       <p>
@@ -78,7 +92,7 @@ export default function Privacidad() {
         Tratamos tus datos para prestarte el servicio que has solicitado al crear tu cuenta: guardar tu información,
         enviarte los avisos y generar tus informes. Las notificaciones y el escáner solo funcionan si tú los activas o
         los usas. Los avisos y las comunicaciones comerciales sobre Premium y Flotas se basan en tu consentimiento, que
-        puedes retirar en cualquier momento.
+        puedes retirar en cualquier momento. Cuando compartes un vehículo, lo haces porque lo pides tú: tratamos esos datos para dar acceso a la persona que tú invitas.
       </p>
 
       <h2>Cookies y almacenamiento</h2>
@@ -90,7 +104,7 @@ export default function Privacidad() {
       </p>
 
       <h2>Cuánto tiempo los conservamos</h2>
-      <p>Mientras mantengas tu cuenta. Si la eliminas, borramos tus datos (consulta cómo en la página «Eliminar cuenta»).</p>
+      <p>Mientras mantengas tu cuenta. Si la eliminas, borramos tus datos (consulta cómo en la página «Eliminar cuenta»). Si eres la persona invitada a un vehículo y eliminas tu cuenta, se borra tu acceso, y lo que anotaste se queda en el vehículo de su propietario. Las invitaciones sin usar caducan a los 7 días.</p>
 
       <h2>Si Moman deja de funcionar</h2>
       <p>
