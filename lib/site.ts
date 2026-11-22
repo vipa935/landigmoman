@@ -15,7 +15,7 @@ export const OWNER = {
   address: '',
 }
 
-export const LAST_UPDATE = '21 de noviembre de 2026'
+export const LAST_UPDATE = '23 de noviembre de 2026'
 
 // Fecha de las condiciones de uso (se cambia aparte de la de la política de privacidad)
 export const TERMS_UPDATE = '21 de noviembre de 2026'
