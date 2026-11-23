@@ -45,7 +45,7 @@ export default function Privacidad() {
         vehículo, también los datos de compra y los documentos adjuntos. El vehículo sigue siendo tuyo: la ficha, los
         datos de compra, la transferencia y el borrado son solo del propietario, y lo que anote un colaborador se guarda
         en tu cuenta y cuenta en tu espacio de almacenamiento. Puedes quitar el acceso en cualquier momento, y la persona
-        invitada puede salir cuando quiera; lo que haya anotado se queda en el historial del vehículo. Cada gasto o registro guarda quién lo anotó, y las personas con acceso ven ese nombre (el de su perfil) junto al gasto y un resumen de lo gastado por cada persona. También reciben las notificaciones de los avisos de ese vehículo, si las tienen activadas. Si dejas de tener
+        invitada puede salir cuando quiera; lo que haya anotado se queda en el historial del vehículo. Cada gasto o registro guarda quién lo anotó, y las personas con acceso ven ese nombre (el de su perfil) junto al gasto y un resumen de lo gastado por cada persona. También reciben las notificaciones de los avisos de ese vehículo, si las tienen activadas. Además, reciben una notificación cuando otra persona anota un gasto en ese vehículo (con su nombre y el importe), que cada una puede desactivar en Ajustes. Si dejas de tener
         Premium, las personas invitadas dejan de ver el vehículo (no se borra nada y vuelven a verlo si lo recuperas).
         Si eliminas tu cuenta, desaparece el vehículo también para ellas. Una persona invitada solo ve ese vehículo, no
         el resto de tu cuenta, y la copia de seguridad en Excel de cada persona incluye solo sus propios vehículos.
