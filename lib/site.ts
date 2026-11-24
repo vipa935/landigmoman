@@ -4,6 +4,9 @@ export const SITE_URL = 'https://moman.es'
 // TODO: dirección real de la app (por ejemplo https://app.moman.es) cuando la muevas de pages.dev
 export const APP_URL = 'https://app.moman.es'
 
+// Ficha de Moman en Google Play
+export const PLAY_URL = 'https://play.google.com/store/apps/details?id=es.moman.app'
+
 // TODO: crea este buzón (Cloudflare Email Routing es gratis) o cambia la dirección
 export const CONTACT_EMAIL = 'hola@moman.es'
 
