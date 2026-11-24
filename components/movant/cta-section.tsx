@@ -58,7 +58,10 @@ export function CtaSection() {
             </li>
           </ul>
         </nav>
-        <p className="text-sm text-muted-foreground">{'© 2026 Moman'}</p>
+        <div className="flex flex-col items-center gap-1 text-center text-sm text-muted-foreground md:items-end md:text-right">
+          <p>{'© 2026 Moman'}</p>
+          <p className="text-xs">Google Play y el logotipo de Google Play son marcas registradas de Google LLC.</p>
+        </div>
       </footer>
     </section>
   )

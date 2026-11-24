@@ -1,6 +1,7 @@
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import { vehicleTypes } from '@/lib/movant-data'
 import { APP_URL } from '@/lib/site'
+import { PlayBadge } from './play-badge'
 import { Logo } from './logo'
 
 export function Hero() {
@@ -54,6 +55,8 @@ export function Hero() {
             Ver funcionalidades
           </a>
         </div>
+
+        <PlayBadge className="mt-6 animate-in fade-in fill-mode-both delay-500 duration-1000" />
 
         <ul
           className="mt-16 flex flex-wrap items-center justify-center gap-3 animate-in fade-in fill-mode-both delay-700 duration-1000 md:mt-20 md:gap-4"
