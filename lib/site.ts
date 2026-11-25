@@ -1,9 +1,6 @@
 // Datos del sitio en un solo lugar. REVISA los marcados con TODO antes de publicar.
 export const SITE_URL = 'https://moman.es'
 
-// TODO: dirección real de la app (por ejemplo https://app.moman.es) cuando la muevas de pages.dev
-export const APP_URL = 'https://app.moman.es'
-
 // Ficha de Moman en Google Play
 export const PLAY_URL = 'https://play.google.com/store/apps/details?id=es.moman.app'
 
