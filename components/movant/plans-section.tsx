@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react'
-import { APP_URL } from '@/lib/site'
+import { PlayBadge } from './play-badge'
 import { cn } from '@/lib/utils'
 import { PlanInterest } from './plan-interest'
 import { Reveal } from './reveal'
@@ -102,12 +102,7 @@ export function PlansSection() {
                 ))}
               </ul>
               {plan.available ? (
-                <a
-                  href={APP_URL}
-                  className="inline-flex items-center justify-center rounded-full bg-brand-grad px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
-                >
-                  Abrir Moman
-                </a>
+                <PlayBadge small className="self-start" />
               ) : (
                 <PlanInterest plan={plan.id as 'pro' | 'flotas'} planName={plan.name} />
               )}

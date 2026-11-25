@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 
 // Insignia oficial «Disponible en Google Play» (archivo public/google-play-badge.png, descargado de Google sin modificar).
 // Si el archivo faltara, se muestra un enlace de texto en lugar de una imagen rota.
-export function PlayBadge({ className }: { className?: string }) {
+export function PlayBadge({ className, small }: { className?: string; small?: boolean }) {
   const [failed, setFailed] = useState(false)
   return (
     <a
@@ -17,7 +17,7 @@ export function PlayBadge({ className }: { className?: string }) {
       className={cn('inline-flex items-center transition-transform duration-300 hover:-translate-y-0.5', className)}
     >
       {failed ? (
-        <span className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-foreground">
+        <span className="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-semibold text-foreground">
           Disponible en Google Play
         </span>
       ) : (
@@ -25,7 +25,7 @@ export function PlayBadge({ className }: { className?: string }) {
         <img
           src="/google-play-badge.png"
           alt="Disponible en Google Play"
-          className="h-14 w-auto"
+          className={small ? 'h-11 w-auto' : 'h-14 w-auto'}
           onError={() => setFailed(true)}
         />
       )}

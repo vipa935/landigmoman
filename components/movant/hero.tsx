@@ -1,6 +1,5 @@
-import { ArrowRight, ChevronDown } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { vehicleTypes } from '@/lib/movant-data'
-import { APP_URL } from '@/lib/site'
 import { PlayBadge } from './play-badge'
 import { Logo } from './logo'
 
@@ -41,13 +40,7 @@ export function Hero() {
         </p>
 
         <div className="mt-10 flex w-full flex-col items-center justify-center gap-3 animate-in fade-in slide-in-from-bottom-4 fill-mode-both delay-500 duration-1000 sm:w-auto sm:flex-row">
-          <a
-            href={APP_URL}
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-grad px-7 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_-8px_rgba(31,107,255,0.8)] sm:w-auto"
-          >
-            Abrir la app
-            <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
-          </a>
+          <PlayBadge />
           <a
             href="#vehiculos"
             className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-3.5 text-base font-semibold text-foreground backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/60 hover:bg-white/10 sm:w-auto"
@@ -55,8 +48,6 @@ export function Hero() {
             Ver funcionalidades
           </a>
         </div>
-
-        <PlayBadge className="mt-6 animate-in fade-in fill-mode-both delay-500 duration-1000" />
 
         <ul
           className="mt-16 flex flex-wrap items-center justify-center gap-3 animate-in fade-in fill-mode-both delay-700 duration-1000 md:mt-20 md:gap-4"

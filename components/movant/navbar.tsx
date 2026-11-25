@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { navLinks } from '@/lib/movant-data'
-import { APP_URL } from '@/lib/site'
+import { PlayBadge } from './play-badge'
 import { cn } from '@/lib/utils'
 import { Logo } from './logo'
 
@@ -30,12 +30,7 @@ export function Navbar() {
           ))}
         </ul>
 
-        <a
-          href={APP_URL}
-          className="hidden rounded-full bg-brand-grad px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_-6px_rgba(31,107,255,0.7)] md:inline-flex"
-        >
-          Abrir la app
-        </a>
+        <PlayBadge small className="hidden md:inline-flex" />
 
         <button
           type="button"
@@ -68,14 +63,8 @@ export function Navbar() {
               </a>
             </li>
           ))}
-          <li className="pt-2">
-            <a
-              href={APP_URL}
-              onClick={() => setOpen(false)}
-              className="block rounded-full bg-brand-grad px-5 py-3 text-center text-sm font-semibold text-white"
-            >
-              Abrir la app
-            </a>
+          <li className="flex justify-center pt-2">
+            <PlayBadge small />
           </li>
         </ul>
       </div>
